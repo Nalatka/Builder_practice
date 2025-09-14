@@ -47,6 +47,9 @@ public class Dipod_Robot_Builder implements Builder {
 
     @Override
     public Robot buildRobot() {
+        if (Name == null){
+            throw new IllegalStateException("Name is null");
+        }
         return new Robot(Name, id, Material, Is_On_Market, Is_It_Mobile, Type);
     }
 }
