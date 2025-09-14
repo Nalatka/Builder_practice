@@ -1,6 +1,7 @@
 public class Dipod_Robot_Builder implements Builder {
     private String Name;
     private String Type;
+    private String Material;
     private int id;
     private Boolean Is_On_Market;
     private Boolean Is_It_Mobile;
@@ -22,7 +23,7 @@ public class Dipod_Robot_Builder implements Builder {
 
     @Override
     public Builder setMaterial(String material) {
-        this.Type = material;
+        this.Material = material;
         return this;
     }
 
@@ -46,6 +47,6 @@ public class Dipod_Robot_Builder implements Builder {
 
     @Override
     public Robot buildRobot() {
-        Robot robot = new Robot()
+        return new Robot(Name, id, Material, Is_On_Market, Is_It_Mobile, Type);
     }
 }

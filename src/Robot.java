@@ -1,11 +1,11 @@
 public class Robot {
-    String name;
-    int id;
-    String material;
-    Boolean Is_On_Market;
-    Boolean Is_It_Mobile;
-    String type;
-    private Robot(String name,int id,String material,Boolean Is_On_Market,Boolean Is_It_Mobile,String type) {
+    private final String name;
+    private final int id;
+    private final String material;
+    private final Boolean Is_On_Market;
+    private final Boolean Is_It_Mobile;
+    private final String type;
+    Robot(String name,int id,String material,Boolean Is_On_Market,Boolean Is_It_Mobile,String type) {
         this.name=name;
         this.id=id;
         this.material=material;
@@ -13,17 +13,23 @@ public class Robot {
         this.Is_It_Mobile=Is_It_Mobile;
         this.type=type;
     }
-    public void getName(){
+    public String  getName(){
+        return name;
     }
-    public void getId(){
+    public int getId(){
+        return id;
     }
-    public void getMaterial(){
+    public String getMaterial(){
+        return material;
     }
-    public void getIs_on_Market(){
+    public Boolean getIs_on_Market(){
+        return Is_On_Market;
     }
-    public void getIs_It_Mobile(){
+    public Boolean getIs_It_Mobile(){
+        return Is_It_Mobile;
     }
-    public void gettype(){
+    public String gettype(){
+        return type;
     }
     public String toString(){
         return name+" "+id+" "+material+" "+Is_On_Market+" "+Is_It_Mobile+" "+type;
