@@ -32,6 +32,6 @@ public class Robot {
         return type;
     }
     public String toString(){
-        return name+" "+id+" "+material+" "+Is_On_Market+" "+Is_It_Mobile+" "+type;
+        return "Robot{name='" + name + "', id=" + id + ", material='" + material + "', isOnMarket=" + Is_On_Market + ", isItMobile=" + Is_It_Mobile + ", type='" + type ;
     }
 }

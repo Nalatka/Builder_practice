@@ -1,0 +1,11 @@
+public class Director {
+    public Robot construct(Builder builder) {
+        builder.setName("Dvunog");
+        builder.setId(1);
+        builder.setIs_It_Mobile(true);
+        builder.setIs_It_Mobile(false);
+        builder.setMaterial("Steel");
+        builder.setType("Universal");
+        return builder.buildRobot();
+    }
+}
