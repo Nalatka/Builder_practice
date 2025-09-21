@@ -1,4 +1,4 @@
-public class Robot {
+public class Robot implements RobotProduct{
     private final String name;
     private final int id;
     private final String material;
@@ -31,7 +31,15 @@ public class Robot {
     public String gettype(){
         return type;
     }
+
+
+
     public String toString(){
         return "Robot{name='" + name + "', id=" + id + ", material='" + material + "', isOnMarket=" + Is_On_Market + ", isItMobile=" + Is_It_Mobile + ", type='" + type ;
+    }
+
+    @Override
+    public void printRobot() {
+        System.out.println(toString());
     }
 }
