@@ -1,6 +1,6 @@
 This code is fully functional to "build" one type of robot. 
 
-The structure follows Builder Pattern including Director function
+The structure follows Builders.Builder Pattern including Builders.Director function
 
 Clean Code Principles Applied and listed below
 

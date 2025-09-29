@@ -1,4 +1,6 @@
-public class Robot implements RobotProduct{
+import Builders.RobotProduct;
+
+public class Robot implements RobotProduct {
     private final String name;
     private final int id;
     private final String material;
